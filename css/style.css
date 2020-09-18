@@ -6,6 +6,96 @@
     Não uso o ponto (.0 quando quero estilizar uma classse do HTML
 */
 
-p{
+/* CTRL + ; -> atalho para comentário */
+
+body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*
+    Margem é pra fora do elemento, em volta, externo à div
+    Se usar o padding, é um espaçamento interno
+*/
+
+/* Dá pra fazer pelo ID: */
+#header {
+
+}
+
+/* 
+    Quando uso o #, estou dizendo que é um ID, ou seja, lá no HTML
+    vou ter que colocar id="[id que eu quero]. ID não posso
+    aproveitar para outros componentes, é único.
+    
+    Já a classe eu possoa aplicar para vários elementos
+    Dá pra fazer pela classe:
+*/
+.header {
+    background-color:#232323;
+    height: 90px;
+    /* É importante fixar o height para
+    manter as cores que colocamos */
+    /* width: 100%;
+    Neste caso, é melhor fixar a altura em px */
+    padding-top: 30px;
+    /* Colocamos o padding no header pq o container tem outra finalidade */
+    border-bottom: orangered solid 5px;
+}
+
+.header .nav .current a,
+.header span {
+    color:orangered;
+    /* 
+    Colocar borda para indicar em que página estamos
+    border: white solid 1px;
+    */
+}
+
+/* Container só serve para limitar até onde nossos elementos vão */
+.container {
+    width: 80%;
+    height: 50px;
+    /* margin-left: 100px; */
+    margin: auto;
+    /* Se colocar a margem em pixels antes, o auto não reconhece */
+}
+
+/* Só o h1 que está no title-header receberá este estilo */
+.title-header h1,
+.nav ul {
+    float: left;
+    margin: 0;
+    color: white;
+}
+
+/* Estilo para a tag <nav> inteira */
+.nav {
+    float: right;
+    margin: 0;
+}
+
+/* Estilo só para a tag <a> que está dentro do nav */
+.nav a {
+    /* Vai tirar o sublinhado do link */
+    text-decoration: none;
+    color: white;
+    /* Deixar tudo em caixa alta */
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* Alterar as propriedades da lista */
+.nav li {
+    /* Alterar a maneira que os elementos estão dispostos */
+    /* Tirar as propriedades da lista, no caso a bolinha */
+    list-style: none;
+    /* inline = cada um na mesma linha; block em blocos */
+    display: inline-block;
+    /* Não quero deixar tão juntos os itens do menu */
+    /* Espaçamento em todos os lados */
+    /* top left bottom right */
+    padding: 10px 20px 0 20px;
+    /* Não quero que fique grudado e header do container */
+
 }
