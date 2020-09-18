@@ -1,0 +1,11 @@
+/* 
+    Não existe tag em CSS
+    Classe CSS. Precisa linkar o index a esse arquivo
+
+    Quando usar ponto ou não? Sempre que usa ponto (.) é uma classe CSS
+    Não uso o ponto (.0 quando quero estilizar uma classse do HTML
+*/
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
