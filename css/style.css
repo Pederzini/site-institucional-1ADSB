@@ -8,6 +8,12 @@
 
 /* CTRL + ; -> atalho para comentário */
 
+/* GLOBAL */
+
+/* *{
+    margin: 0;
+} */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -19,6 +25,24 @@ body {
 */
 
 /* Dá pra fazer pelo ID: */
+
+/* Container só serve para limitar até onde nossos elementos vão */
+.container {
+    width: 80%;
+    height: 50px;
+    /* margin-left: 100px; */
+    margin: auto;
+    /* Se colocar a margem em pixels antes, o auto não reconhece */
+}
+
+.btn-orange {
+    background-color: orangered;
+    color: #FFFFFF;
+    border: none;
+    width: 60px;
+    height: 30px;
+}
+
 #header {
 
 }
@@ -31,6 +55,7 @@ body {
     Já a classe eu possoa aplicar para vários elementos
     Dá pra fazer pela classe:
 */
+
 .header {
     background-color:#232323;
     height: 90px;
@@ -50,15 +75,6 @@ body {
     Colocar borda para indicar em que página estamos
     border: white solid 1px;
     */
-}
-
-/* Container só serve para limitar até onde nossos elementos vão */
-.container {
-    width: 80%;
-    height: 50px;
-    /* margin-left: 100px; */
-    margin: auto;
-    /* Se colocar a margem em pixels antes, o auto não reconhece */
 }
 
 /* Só o h1 que está no title-header receberá este estilo */
@@ -98,4 +114,49 @@ body {
     padding: 10px 20px 0 20px;
     /* Não quero que fique grudado e header do container */
 
+}
+
+/* SHOWCASE */
+
+.showcase {
+    /* Preciso sair da pasta do css e entrar na da img */
+    /* ../ está voltando um diretório para trás */
+    background-image: url(../img/team.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    min-height: 400px;
+}
+
+.showcase h1{
+    margin: 0;
+    font-size: 55px;
+    padding-top: 100px;
+}
+
+.showcase p{
+    font-size: 22px;
+}
+
+/* NEWS */
+
+.new {
+    background-color: #232323;
+    color: #FFFFFF;
+    padding: 30px 0px 20px 0px;
+}
+
+.new h1 {
+    margin: 0;
+    float: left;
+}
+
+.new form {
+    float: right;
+}
+
+.new input {
+    height: 25px;
+    width: 225px;
 }
